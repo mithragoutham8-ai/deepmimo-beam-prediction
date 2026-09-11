@@ -2,7 +2,7 @@
 
 Predicting the optimal 5G/mmWave beam for a user using **only their (x, y) location** — no channel feedback required — trained and evaluated on real ray-traced propagation data from the [DeepMIMO](https://www.deepmimo.net/) dataset.
 
-![Beam prediction accuracy vs baselines](images/beam_prediction_results.png)
+![Beam prediction accuracy vs baselines](beam_prediction_results.png)
 
 ## The problem
 
@@ -30,7 +30,7 @@ The model beats the majority baseline by **+26.5 points** using nothing but loca
 
 ### Ground truth vs. predicted beam map
 
-![Ground truth vs predicted beam assignment across campus](images/beam_prediction_map.png)
+![Ground truth vs predicted beam assignment across campus](beam_prediction_map.png)
 
 The model recovers the large-scale spatial structure well (open line-of-sight corridors, shadowed regions behind buildings), though predicted regions are visibly smoother than ground truth — a small 2-layer network can't fully capture the jagged, building-edge-driven boundaries in the true data.
 
